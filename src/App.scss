@@ -1,0 +1,44 @@
+@use "@/styles/variables" as *;
+
+.container{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+  .App {
+    max-width: 700px;
+    margin: 0 auto;
+
+    h1 {
+      color: var(--text-color);
+      margin: 100px 20px;
+      font-weight: 600;
+    }
+   
+    .message {
+      margin-top: 50px;
+      padding: 15px;
+      background-color: var(--message-bg);
+      color: var(--message-text);
+      border-radius: 8px;
+      border-left: 4px solid var(--message-border);
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 100px;
+    }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }

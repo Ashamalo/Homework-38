@@ -1,0 +1,42 @@
+$primary-color: #4361ee;
+$secondary-color: #6c757d;
+$success-color: #28a745;
+$text-color: #2c3e50;
+$border-color: #ced4da;
+$light-bg: #f8f9fa;
+$message-bg: #e8f4fd;
+$message-border: #5bc0de;
+
+:root {
+    --primary-color: #4361ee;
+    --primary-color-hover: #3a56d4;
+    --secondary-color: #6c757d;
+    --secondary-color-hover: #5a6268;
+    --success-color: #28a745;
+    --success-color-hover: #218838;
+    --text-color: #2c3e50;
+    --bg-color: #f8f9fa;
+    --input-bg: #ffffff;
+    --input-border: #ced4da;
+    --message-bg: #e8f4fd;
+    --message-border: #5bc0de;
+    --message-text: #31708f;
+  }
+  
+  [data-theme="dark"] {
+    --primary-color: #5a75f5;
+    --primary-color-hover: #4a65e5;
+    --secondary-color: #868e96;
+    --secondary-color-hover: #757c83;
+    --success-color: #3dd15f;
+    --success-color-hover: #2fc04f;
+    --text-color: #f8f9fa;
+    --bg-color: #212529;
+    --input-bg: #343a40;
+    --input-border: #495057;
+    --message-bg: #1a3a5a;
+    --message-border: #3d8fd1;
+    --message-text: #a8d1f0;
+  }
+
+$font-main: 'Segoe UI', Verdana, sans-serif;

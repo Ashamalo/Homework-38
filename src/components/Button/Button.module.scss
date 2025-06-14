@@ -1,0 +1,53 @@
+@use "@/styles/variables" as *;
+
+.button {
+
+  padding: 12px 24px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 18px;
+
+  &:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: #a0a0a0 !important;
+  }
+
+  &Primary {
+    background-color: var(--primary-color);
+
+    &:hover:not(:disabled) {
+      background-color: var(--primary-color-hover);
+    }
+  }
+
+  &Secondary {
+    background-color: var(--secondary-color);
+
+    &:hover:not(:disabled) {
+      background-color: var(--secondary-color-hover);
+    }
+  }
+
+  &Success {
+    background-color: var(--success-color);
+
+    &:hover:not(:disabled) {
+      background-color: var(--success-color-hover);
+    }
+  }
+}

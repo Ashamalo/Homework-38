@@ -1,0 +1,14 @@
+@use "@/styles/variables" as *;
+
+body {
+  font-family: $font-main;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  background-color: $light-bg;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
